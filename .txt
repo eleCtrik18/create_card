@@ -1,5 +1,0 @@
-var sampleObject = {
-    id: app.use(morgan(":id")),
-    member: 'stack',
-  
-};
