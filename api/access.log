@@ -14,6 +14,3 @@ bb98e594-eda0-4e13-9fc3-d645250fe764 POST /api/create/create 247.150 {"username"
 344f68ac-a25a-4bac-908b-63175749d0fb POST /api/create/create 273.068 {"username":"Test17","event":"Event17"} -
 3e35f564-707d-4694-a275-8e07aa10603e POST /api/create/create 291.924 {"username":"Test18","event":"Event18"} {"username":"Test18","event":"Event18"}
 96df932e-88dd-4bd4-8391-67e34b5ce7cc POST /api/create/create 280.204 {"username":"Test18","event":"Event18"} {"username":"Test18","event":"Event18"}
-2400c537-ecdc-44b9-abdd-909d7783682b POST /api/create/create 295.323 {"username":"Test19","event":"Event19"} {"username":"Test19","event":"Event19"}
-811c7481-2a31-4124-a96b-d9803b573c90 POST /api/create/create 281.024 {"username":"Test20","event":"Event20"} 
-005349cc-e05e-467f-8110-7e9850f90709 POST /api/create/create 299.986 {"username":"Test21","event":"Event21"} 
