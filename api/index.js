@@ -26,10 +26,10 @@ let accesslogstream = fs.createWriteStream(path.join(__dirname, "access.log"), {
   flags: "a",
 });
 app.use(
-  morgan(":id :method :url :response-time :body ", { stream: accesslogstream })
+  morgan("id [:id] method[:method] url[:url] response time[:response-time] request[:body] ", { stream: accesslogstream })
 );
 
-app.use(morgan(":id :method :url :response-time :body "));
+app.use(morgan("id [:id] method[:method] url[:url] response time[:response-time] request[:body] "));
 
 app.listen(8800, () => {
   console.log("Server is running on port 8800");
@@ -42,6 +42,20 @@ function assignid(req, res, next) {
   next();
 }
 
+app.use(morgan({
+  collection: 'error_logger',
+  connectionString:process.env.MONGO_URL,
+  user: 'lama',
+  pass: 'lama'
+ },
+ {
+  skip: function (req, res) {
+      return res.statusCode < 400;
+  }
+ },
+ 'dev'
+));
+
 mongoose.connect(
   process.env.MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
@@ -50,5 +64,6 @@ mongoose.connect(
     else console.log(`Database connected`); // acutally either this must get prin
   }
 );
+
 
 app.use("/api/create", authRoute);
