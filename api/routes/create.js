@@ -1,6 +1,29 @@
 const router = require("express").Router();
 const { response } = require("express");
 const User = require("../models/User");
+const express = require("express");
+const app = express();
+
+//Routes
+/**
+ * @swagger
+ * /create:
+ *   post:
+ *     summary: Create a new card
+ *     tags: [Cards]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:          
+ *     responses:
+ *       200:
+ *         description: The book was successfully created
+ *         content:
+ *           application/json:
+ *             
+ *       500:
+ *         description: Some server error
+ */
 
 router.post("/create", async (req, res) => {
   const newUser = new User({

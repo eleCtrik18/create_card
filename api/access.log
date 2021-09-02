@@ -19,14 +19,38 @@ bb98e594-eda0-4e13-9fc3-d645250fe764 POST /api/create/create 247.150 {"username"
 d143414a-dcb7-479e-ac58-8603712e8172 POST /api/create/create 228.427 {"username":"Test22","event":"Event22"} 
 8622ad53-2e90-4643-ac98-0e3ba5ee4182 POST /api/create/create 244.301 {"username":"Test22","event":"Event22"} 
 57b08baa-533b-4744-ad86-678d03d3bccb POST /api/create/create 557.938 {"username":"Test22","event":"Event22"} 
-1bf3abd8-f1eb-4659-8567-4a3c6ba8147c POST /api/create/create 235.708 {"username":"Test22","event":"Event22","nigga":"marda"} 
-436724ac-db45-4a16-84f8-096d6f29640a POST /api/create/create 230.809 {"username":"Test22","event":"Event22","nigga":"marda"} 
-fed65612-66c3-4183-ad27-e2acb775e5fc POST /api/create/create 237.223 {"username":"Test22","event":"Event22","nigga":"marda"} 
-085e20d7-0c8d-4edb-a2ec-42a02a9e9649 POST /api/create/create 236.387 {"username":"Test22","event":"Event22","nigga":"marda"} 
-e8441b41-cfe3-4700-a31b-bc9a7996fda0 POST /api/create/create 233.183 {"username":"Test22","event":"Event22","nigga":"marda"} 
-8d8d096f-2e29-4e2a-958b-be2965df3913 POST /api/create/create 227.839 {"username":"Test22","event":"Event22","nigga":"marda"} 
 1eefff1f-2731-4310-addb-1b4b74b4c4f8 POST /api/create/create 1.813 {} 
 b6024b79-9d30-4eff-b5bb-714575e8b7a4 POST /api/create/create 232.392 {"username":"Test22","event":"Event22"} 
 id [e843642c-7bcc-4cd5-b1e1-c9c599b889b1] method[POST] url[/api/create/create] response time[257.523] request[{"username":"Test25","event":"Event25"}] 
-id [e81779c9-a4ac-4ec9-a9b1-9f297daaae3d] method[POST] url[/api/create/create] response time[239.763] request[{"username":"Test26","event":"Event26"}] 
-id [8d80e171-df65-48e3-8324-7dd1accd4391] method[POST] url[/api/create/create] response time[228.332] request[{"username":"Test27","event":"Event27"}] 
+id [1e9ed79d-e4cf-4652-b926-677881b984bc] method[GET] url[/] response time[2.391] request[{}] 
+id [050a46fd-a5f8-464f-8e20-0dfb31878b10] method[GET] url[/] response time[0.748] request[{}] 
+id [00284a9e-27db-4e5c-8870-af154811963c] method[GET] url[/] response time[0.201] request[{}] 
+id [76839439-5b84-4fea-b763-f1e1b7e01aed] method[GET] url[/] response time[2.918] request[{}] 
+id [ee617b1f-f611-42e5-8418-2f538c6b27aa] method[GET] url[/] response time[2.750] request[{}] 
+id [0652c4b5-f748-4a49-a2f0-82db798961d7] method[GET] url[/] response time[2.385] request[{}] 
+id [63fd65b5-5926-4d12-965f-63942f451255] method[GET] url[/] response time[0.289] request[{}] 
+id [9ec03f38-c8cc-40ec-866a-e58ada281b52] method[GET] url[/] response time[0.184] request[{}] 
+id [10e8f5f4-a4cd-4563-9825-bdf8cae8a9af] method[GET] url[/] response time[0.162] request[{}] 
+id [a0fb73c8-b875-4951-afed-e8a76e08ee42] method[GET] url[/] response time[0.176] request[{}] 
+id [4783dff3-debc-4be1-b3df-855aebc503e5] method[GET] url[/] response time[0.188] request[{}] 
+id [f099935c-3d61-46ca-ab1d-1019cbbf5028] method[GET] url[/] response time[0.224] request[{}] 
+id [597202e8-39ec-4da2-ad45-10b25da40672] method[GET] url[/] response time[0.181] request[{}] 
+id [f5ddc4a3-5c8a-499d-9d38-42dbc091b379] method[GET] url[/] response time[0.180] request[{}] 
+id [12816d76-035c-446c-b1a8-2753e08ab3e1] method[GET] url[/] response time[0.183] request[{}] 
+id [78406d03-4671-42fd-90db-4fe128fe4691] method[GET] url[/users/Test22] response time[2.588] request[{}] 
+id [ee8bbacc-cbbf-444e-bc35-6a0bc2589688] method[GET] url[/users] response time[2.203] request[{}] 
+id [830362ec-9ef2-4eba-890c-df3d938bf862] method[GET] url[/users/] response time[0.328] request[{}] 
+id [50f1b7e9-3f01-4a30-8a41-084fd45cce96] method[GET] url[/users] response time[0.304] request[{}] 
+id [211b2ac1-04ac-48f2-98bc-fe953c92f388] method[GET] url[/users] response time[2.131] request[{}] 
+id [5b28102d-0c12-488d-a49d-9966bb5da2b5] method[GET] url[/users] response time[0.287] request[{}] 
+id [998060cb-4919-4327-ab8c-2b85760dcdab] method[GET] url[/users] response time[0.183] request[{}] 
+id [15a3cf18-d7e0-4291-9051-72a88b229c1b] method[GET] url[/users] response time[0.179] request[{}] 
+id [4b172e20-4d7c-4eab-99d2-2015c7e24195] method[GET] url[/users] response time[0.190] request[{}] 
+id [06b76fef-11a9-482d-90fc-2db2274a6913] method[GET] url[/users] response time[0.208] request[{}] 
+id [2bc3fe15-5b14-421d-9030-440c562ad0af] method[GET] url[/users] response time[0.186] request[{}] 
+id [1614a49e-bd0c-4232-9111-a92f39e12948] method[GET] url[/users] response time[0.191] request[{}] 
+id [0c9e659f-edee-4f8b-b986-7ed158dce0ef] method[GET] url[/users] response time[0.180] request[{}] 
+id [868b976d-93cd-43da-8cee-f5f3f39b4b1e] method[GET] url[/users] response time[0.177] request[{}] 
+id [1247a39c-955c-4b87-891a-5e842b314e12] method[GET] url[/users] response time[2.409] request[{}] 
+id [b47b20c5-c04d-4d61-8c09-96d1aac645c6] method[GET] url[/users] response time[0.303] request[{}] 
+id [278f7d42-48c8-43a4-952d-d8eaf5ecfa7f] method[GET] url[/users] response time[0.197] request[{}] 
