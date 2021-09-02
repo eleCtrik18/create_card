@@ -15,9 +15,9 @@ const options = {
 	definition: {
 		openapi: "3.0.0",
 		info: {
-			title: "Library API",
+			title: "Card API",
 			version: "1.0.0",
-			description: "A simple Express Library API",
+			description: "A simple Express Card API",
 		},
 		servers: [
 			{
