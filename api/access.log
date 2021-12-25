@@ -54,3 +54,5 @@ id [868b976d-93cd-43da-8cee-f5f3f39b4b1e] method[GET] url[/users] response time[
 id [1247a39c-955c-4b87-891a-5e842b314e12] method[GET] url[/users] response time[2.409] request[{}] 
 id [b47b20c5-c04d-4d61-8c09-96d1aac645c6] method[GET] url[/users] response time[0.303] request[{}] 
 id [278f7d42-48c8-43a4-952d-d8eaf5ecfa7f] method[GET] url[/users] response time[0.197] request[{}] 
+id [f139e31b-01d8-4b62-8be6-dd10bfa399e9] method[GET] url[/books] response time[1.792] request[{}] 
+id [1ad7b3ad-056a-4458-98cd-fa32ebc666b2] method[POST] url[/create] response time[2.191] request[{}] 

@@ -17,7 +17,7 @@ const options = {
 		info: {
 			title: "Card API",
 			version: "1.0.0",
-			description: "A simple Express Card API",
+			description: "A Simple Express Card API",
 		},
 		servers: [
 			{

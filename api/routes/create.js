@@ -3,27 +3,52 @@ const { response } = require("express");
 const User = require("../models/User");
 const express = require("express");
 const app = express();
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     CreateCard:
+ *       type: object
+ *       required:
+ *         - name
+ *         - event
+ *       properties:
+ *         name:
+ *           type: string
+ *           description: The name of the card
+ *         event:
+ *           type: string
+ *           description: The event 
+ *       example:
+ *         
+ *         name: "Card Name"
+ *         event: "Card Event"
+ */
 
-//Routes
+ /**
+  * @swagger
+  * tags:
+  *   name: Card
+  *   description: The cards managing API
+  */
+
 /**
  * @swagger
  * /create:
  *   post:
  *     summary: Create a new card
- *     tags: [Cards]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:          
+ *     tags: [Card]
  *     responses:
  *       200:
- *         description: The book was successfully created
+ *         description: Successfully created
  *         content:
  *           application/json:
- *             
- *       500:
- *         description: Some server error
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/CreateCard'
  */
+
 
 router.post("/create", async (req, res) => {
   const newUser = new User({
