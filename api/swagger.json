@@ -1,0 +1,81 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Cards API",
+      "description": "API"
+    },
+    "host": "localhost:8800",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Cards",
+        "description": "Cards API"
+      }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+      "/create": {
+
+        "post": {
+          "tags": ["Cards"],
+          "summary": "Create Cards API",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "body",
+              "description": "Card Name",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "event",
+              "in": "body",
+              "description": "Card Description",
+              "type": "string"
+            }
+ 
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/ServiceResponse"
+              }
+            }
+          }
+        }
+      }
+
+    },
+    "definitions": {
+      "Product": {
+        "required": ["event", "username"],
+        "properties": {
+
+          "username": {
+            "type": "string"
+          },
+
+          "event": {
+            "type": "string"
+          }
+        }
+      },
+      "ServiceResponse": {
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        }
+      }
+    }
+  }
