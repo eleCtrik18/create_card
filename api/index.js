@@ -7,28 +7,10 @@ const morgan = require("morgan");
 const { uuid } = require("uuidv4");
 const fs = require("fs");
 const path = require("path");
-const swaggerUi = require("swagger-ui-express");
-const swaggerJSdoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express"), swaggerDocument = require("./swagger.json");
 
-// Extended: https://swagger.io/specification/#infoObject
-const options = {
-	definition: {
-		openapi: "3.0.0",
-		info: {
-			title: "Card API",
-			version: "1.0.0",
-			description: "A Simple Express Card API",
-		},
-		servers: [
-			{
-				url: "http://localhost:8800",
-			},
-		],
-	},
-	apis: ["./routes/*.js"],
-};
-const swaggerDocs = swaggerJSdoc(options);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+
 
 
 morgan.token("id", function getId(req) {
@@ -42,7 +24,7 @@ morgan.token("request", function getIp(res) {
 });
 
 
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(assignid);
 
 let accesslogstream = fs.createWriteStream(path.join(__dirname, "access.log"), {
